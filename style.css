@@ -124,10 +124,14 @@ h2 {
 .main-carousel {
   margin: 0 auto;
   width: 50vw;
-  /*
-    .flickity-button.flickity-prev-next-button.previous{
-        Povedlo se mi button posunout po ose y, ale ne po horizontu - vedle textu
-    }*/
+}
+
+.main-carousel .flickity-button.flickity-prev-next-button.previous {
+  left: -60px;
+}
+
+.main-carousel .flickity-button.flickity-prev-next-button.next {
+  right: -60px;
 }
 
 .carousel-cell {
