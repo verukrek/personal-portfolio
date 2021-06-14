@@ -1,0 +1,151 @@
+$mainColor: rgb(245, 136, 12);
+$secondColor: rgba(3, 3, 3, 0.8);
+$boxPad: 1rem;
+$boxMar: 1.5rem;
+$boxText: rgba(255, 255, 255, 0.911);
+$boxShadow: 5px 10px 30px 0 black;
+$decor: none;
+$radiumImg: 0px 40px 40px 40px;
+$fontStyl: bold;
+$fontFam: 'Poiret One', cursive;
+
+
+@mixin grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+@mixin inline-block {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;    
+}
+
+body{
+    background-color: $mainColor;
+    font-family: $fontFam;
+    margin: 0;
+    }
+   
+h2{
+    font-weight: $fontStyl;
+}  
+    
+.navigace-block{
+    display: flex;
+    justify-content: flex-end;
+    padding: $boxPad;
+    margin: $boxMar;
+    
+
+    li{
+    list-style: $decor;
+    padding: 1rem;
+    font-weight: $fontStyl;
+    }
+
+    a{  
+        color: $secondColor;
+        text-decoration: $decor;
+        &:visited{
+            color: $secondColor;
+        }
+        &:hover{
+            color: $mainColor;  
+        }
+        
+    }
+}
+.hlava-block__hlavni-element{
+    @include grid();
+    column-gap: 0;
+    background-color: $secondColor;
+    padding: $boxPad;
+    margin: $boxMar;
+    margin-top: 0;
+    box-shadow: $boxShadow;
+    color: $boxText;
+    max-width: 70%;
+    margin: 0 auto;
+   
+    .profil {
+        width: 50%;
+        border-radius: $radiumImg;
+        padding: $boxPad;
+        grid-row: 1/4;
+    }
+    &--vyrazne {
+      justify-self: left;
+      align-self: flex-end;
+    }
+    &--nevyrazne {
+        font-family: $fontFam;
+        font-size: large;
+        font-weight: lighter;
+        font-style: italic;
+        justify-self: left;
+        
+    }
+    .signature {
+        justify-self: end;
+        padding: $boxPad
+    }
+}
+
+
+.site-block{
+    @include inline-block();
+    background-color: $secondColor;
+    color: $boxText;
+
+    img, svg{
+        width: 70%;
+    }
+}
+
+
+#fb:hover{
+    fill: $mainColor; 
+    transition: all ease 1.2s;
+    transform: rotate(360deg);
+
+}
+#linked:hover{
+    fill: $mainColor;
+    transition: all ease 0.5s;
+    transform: scale(1.5);
+
+}
+
+.main-carousel{
+ margin: 0 auto;
+ width: 50vw;
+
+ /*.flickity-button{
+     Jak posunout button pryč z textu?
+ }*/
+}
+.carousel-cell{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin: $boxMar;
+    text-align: center;
+
+    p{
+        font-weight: 600;
+    }
+
+}
+
+@media only screen and (max-width: 450px){
+    .navigace-block{
+        display: block;
+    }
+    .hlava-block__hlavni-element{
+        display: block;
+    }
+}

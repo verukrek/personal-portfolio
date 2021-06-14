@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <title>Osobní portfolio</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="hlava-block hlava-block--text">
+        <ul class="navigace-block">
+            <li class="navigace-block__about navigace-block__about--color"><a href="#omne">O mně</a></li>
+            <li class="navigace-block__career"><a href="#career">Profesní zkušenosti</a></li>
+            <li class="navigace-block__education"><a href="#education">Vzdělání</a></li>
+            <li class="navigace-block__contact"><a href="#skok">Kontakt</a></li>
+        </ul>
+        <div class="hlava-block__hlavni-element">  
+                    <img class="profil" src="VeronikaK.jpeg" alt="Profilová foto">
+                    <h1 class="hlava-block__hlavni-element--vyrazne">Veronika Krekulová</h1>
+                    <p class="hlava-block__hlavni-element--nevyrazne">"Personalistka, která našla vášeň v kódování."</p>
+                    <img class="signature" src="signature.svg" alt="Podpis">
+                                             
+        </div>
+
+    </header>
+    <main class="main-block">
+        <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true, "pageDots": false }'>  
+            <div class="carousel-cell" id="omne">
+                <h2>O mně</h2>
+                <p>
+                    Jsem absolventkou bakalářského studijního programu Personální management v průmyslových podnicích a inženýrského studijního programu Projektové řízení inovací na ČVUT. Již během studijí jsem začala pracovat v oblasti personalistiky, kde působím dodnes. Nyní pracuji jako HR Generalist ve společnosti působící v automotive a průmyslovém segmentu. Na starosti mám kompletní nastavení a realizaci všechn HR procesů společnosti.
+                </p>
+            </div>
+            <div class="carousel-cell" id="career">
+                <h2>Profesní zkušenosti</h2>
+                <p>
+                    (2020 - dodnes) HR Generalist <br>
+                    Zodpovídám za chod našeho dvoučlenného HR oddělení od A do Z, za nastavení a realizaci všech personálních procesů a činností společnosti. 
+                </p>
+                <p>
+                    (2018 - 2020) HR asistent<br>
+                    Byla jsem pravou rukou hlavní personalistce a pomáhala jí se zajištěním všech HR procesů. Komunikovala jsem s uchazeči, plánovala pohovory. Zajišťovala jsem personální agendu spojenou s nástupy a výstupy zaměstnanců a vedla jejich osobní složky. Měla jsem na starosti kariérní stránky, povinná školení a další. 
+                </p>
+            </div>
+            <div class="carousel-cell" id="education">
+                <h2>Vzdělání</h2>
+                <p>
+                   (2018 - 2020) České vysoké učení technické v Praze <br>
+                   Obor: Projektové řízení inovací (Ing.) 
+                   Certifikát: Athens Network: Activities and Economy of trade ports, z intenzivního kurzu v Paříži na ENSTA ParisTech
+                </p>
+                <p>
+                    (2015 2018) České vysoké učení technické v Praze <br>
+                    Obor: Personální management v průmyslových podnicích (Bc.)
+                </p>
+            </div>
+        
+        </div>
+    </main>
+    <footer>
+        <div class="site-block" id="skok">
+        <h3>Kontakty</h3>
+            <a href="https://www.linkedin.com/in/veronika-krekulová-991519129/" target="_blank" title="LinkedIn" >
+                <svg id="linked" fill="rgba(255, 255, 255, 0.911)" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="48px" height="48px">    <path d="M19,3H5C3.895,3,3,3.895,3,5v14c0,1.105,0.895,2,2,2h14c1.105,0,2-0.895,2-2V5C21,3.895,20.105,3,19,3z M7.738,17L7.738,17 c-0.697,0-1.262-0.565-1.262-1.262v-4.477C6.477,10.565,7.042,10,7.738,10h0C8.435,10,9,10.565,9,11.262v4.477 C9,16.435,8.435,17,7.738,17z M7.694,8.717c-0.771,0-1.286-0.514-1.286-1.2s0.514-1.2,1.371-1.2c0.771,0,1.286,0.514,1.286,1.2 S8.551,8.717,7.694,8.717z M16.779,17L16.779,17c-0.674,0-1.221-0.547-1.221-1.221v-2.605c0-1.058-0.651-1.174-0.895-1.174 s-1.058,0.035-1.058,1.174v2.605c0,0.674-0.547,1.221-1.221,1.221h-0.081c-0.674,0-1.221-0.547-1.221-1.221v-4.517 c0-0.697,0.565-1.262,1.262-1.262h0c0.697,0,1.262,0.565,1.262,1.262c0,0,0.282-1.262,2.198-1.262C17.023,10,18,10.977,18,13.174 v2.605C18,16.453,17.453,17,16.779,17z"/></svg>
+                <!--<img class="site-block__logo site-block__logo--linkedin" src="linkedin.svg" alt="LinkedIn">-->
+            </a>
+            <a href="https://github.com/verukrek" title="GitHub" target="_blank">
+                <img class="site-block__logo site-block__logo--github" src="github.svg" alt="GitHub">
+            </a>
+            <a href="mailto:veronika.krekulova@seznam.cz" title="Email" target="_blank">
+                <img class="site-block__logo site-block__logo--email" src="email.svg" alt="Email">
+            </a>
+            <a href="https://www.facebook.com/krekulova/" title="Facebook" target="_blank">
+                <svg id="fb" fill="rgba(255, 255, 255, 0.911)" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="48px" height="48px">   
+                    <path d="M12,2C6.477,2,2,6.477,2,12c0,5.013,3.693,9.153,8.505,9.876V14.65H8.031v-2.629h2.474v-1.749 c0-2.896,1.411-4.167,3.818-4.167c1.153,0,1.762,0.085,2.051,0.124v2.294h-1.642c-1.022,0-1.379,0.969-1.379,2.061v1.437h2.995 l-0.406,2.629h-2.588v7.247C18.235,21.236,22,17.062,22,12C22,6.477,17.523,2,12,2z"/></svg>
+                <!--<img class="site-block__logo site-block__logo--facebook" src="facebook.svg" alt="Facebook">-->
+            </a>
+            
+            
+        </div>
+    </footer>
+
+</body>
+</html>
